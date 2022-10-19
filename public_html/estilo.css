@@ -1,0 +1,240 @@
+/* 
+    Created on : 17 oct. 2022, 23:37:53
+    Author     : gamars
+*/
+
+@font-face {
+    font-family: 'Wavepool';
+    src: url('fonts/Wavepool.otf') format("opentype");
+}
+
+@font-face {
+    font-family: 'DynaPuff';
+    src: url('fonts/DynaPuff-VariableFont_wdth,wght.ttf') format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: rgba(173,255,47,0.25);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 5% repeat(5, 1fr) 5%;
+    grid-template-rows: 15% 3rem repeat(6, 1fr) 5%;
+    height: 100%;
+}
+
+.grid > * {
+    display: flex;
+}
+
+#pageTitle {
+    grid-column: 2 / span 5;
+    grid-row: 1;
+    font-family: 'Wavepool';
+    font-size: 5rem;
+    justify-self: center;
+    align-self: center;
+    background: linear-gradient(indigo, cyan, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: -4px -4px rgba(0,0,0,0.8);
+    padding-top: 10px;
+}
+
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten, #f {
+    justify-self: center;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    font-family: 'DynaPuff';
+    font-size: 2rem;
+    outline: 3px dotted coral;
+    border-radius: 10px;
+    width: 95%;
+    height: 80%;
+    box-shadow: inset 0 0 10px 0 rgba(0,0,0,0.6);
+}
+
+#one {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#two {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+#three {
+    grid-column: 4;
+    grid-row: 3;
+}
+
+#four {
+    grid-column: 4;
+    grid-row: 4;
+}
+
+#five {
+    grid-column: 4;
+    grid-row: 5;
+}
+
+#six {
+    grid-column: 3;
+    grid-row: 5;
+}
+
+#seven {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+#eight {
+    grid-column: 2;
+    grid-row: 6;
+}
+
+#nine {
+    grid-column: 2;
+    grid-row: 7;
+}
+
+#ten {
+    grid-column: 3;
+    grid-row: 7;
+}
+
+#f {
+    grid-column: 4;
+    grid-row: 7;
+}
+
+#alfil, #horse {
+    outline: 1px hidden red;
+    height: 50%;
+    width: 20%;
+}
+
+#alfil {
+    background: url('pics/alfil.webp');
+    background-size: 30px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: self-start;
+    filter: drop-shadow(0 0 4px cyan);
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#horse {
+    background: url('pics/horse.webp');
+    background-size: 30px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: self-end;
+    filter: drop-shadow(0 0 4px deeppink);
+    grid-column: 2;
+    grid-row: 3;
+}
+
+#dice1 {
+    grid-column: 5;
+    grid-row: 3;
+    background: url('pics/dice/one.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 30%;
+    justify-self: center;
+}
+
+#dice2 {
+    grid-column: 6;
+    grid-row: 3;
+    background: url('pics/dice/one.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 30%;
+    justify-self: center;
+}
+
+#number1Got, #number2Got, #winner, #turns {
+    justify-self: center;
+    align-self: center;
+    font-family: 'DynaPuff';
+    font-size: 1.3rem;
+}
+
+#number1Got {
+    grid-column: 5;
+    grid-row: 4;
+}
+
+#number2Got {
+    grid-column: 6;
+    grid-row: 4;
+}
+
+#girar1, #girar2 {
+    justify-self: center;
+    justify-content: center;
+    align-self: center;
+    width: 50%;
+    height: 50%;
+    background: cyan;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Comic Sans MS';
+    font-size: 1.3rem;
+    font-weight: bold;
+    box-shadow: 6px 6px 6px 0 rgba(0,0,0,0.6);
+    transition: all 0.1s;
+}
+
+#girar1 {
+    grid-column: 5;
+    grid-row: 5;
+}
+
+#girar2 {
+    grid-column: 6;
+    grid-row: 5;
+}
+
+#girar1:hover, #girar2:hover {
+    cursor: pointer;
+}
+
+#girar1:active, #girar2:active {
+    background: darkcyan;
+    color: white;
+    box-shadow: 1px 1px 6px 0 rgba(0,0,0,0.6);
+    outline: none;
+    border: none;
+}
+
+#winner {
+    grid-column: 5 / 7;
+    grid-row: 6;
+}
+
+#turns {
+    grid-column: 5 / 7;
+    grid-row: 7;
+}
+
+
+
+
+

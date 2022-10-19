@@ -1,0 +1,6 @@
+# Ignore dirs
+/test
+/RSAG_BoardGame
+
+# Ignore .zips
+*.zip

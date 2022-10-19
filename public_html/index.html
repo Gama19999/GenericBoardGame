@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+- A board game have 10 positions. 
+
+- There are 2 players that advance only forward depending on the number of the
+  roll on a six-sided dice. 
+
+- Show the numbers of each roll and the number of times the players had the same
+  number in the same position.
+-->
+<html>
+    <head>
+        <title>Board Game</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css"/>
+        <link rel="icon" href="pics/icon.png"/>
+        <script src="dynamic.js"></script>
+    </head>
+    <body>
+        <div class="grid">
+            <div id="pageTitle">Generic Board Game :X</div>
+            <div id="one">1</div>
+            <div id="two">2</div>
+            <div id="three">3</div>
+            <div id="four">4</div>
+            <div id="five">5</div>
+            <div id="six">6</div>
+            <div id="seven">7</div>
+            <div id="eight">8</div>
+            <div id="nine">9</div>
+            <div id="ten">10</div>
+            <div id="f">F</div>
+            <div id="alfil"></div>
+            <div id="horse"></div>
+            <div id="dice1"></div>
+            <div id="dice2"></div>
+            <p id="number1Got"></p>
+            <p id="number2Got"></p>
+            <input type="submit" value="Turn Alfil" id="girar1" onclick="girar(1)" />
+            <input type="submit" value="Turn Horse" id="girar2" onclick="girar(2)" />
+            <p id="winner"></p>
+            <p id="turns"></p>
+        </div>
+    </body>
+</html>
