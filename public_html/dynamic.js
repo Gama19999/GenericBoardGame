@@ -78,13 +78,14 @@ function move(player, diceNum) {
 function checkWin() {
     if (posActP1 >= 10) {
         document.getElementById('winner').innerHTML = "Sorry Horse :(<br>¡Winner Alfil!";
-        document.getElementById('turns').innerHTML = turnsP1.toString();
+        document.getElementById('turns').innerHTML = `Py1: ${turnsP1.toString()}<br>Py2: ${turnsP2.toString()}`;
         return -1;
     } else if (posActP2 >= 10) {
         document.getElementById('winner').innerHTML = "Sorry Alfil :(<br>¡Winner Horse!";
-        document.getElementById('turns').innerHTML = turnsP2.toString();
+        document.getElementById('turns').innerHTML = `Py1: ${turnsP1.toString()}<br>Py2: ${turnsP2.toString()}`;
         return -1;
     } else {
         return 0;
     }
 }
+

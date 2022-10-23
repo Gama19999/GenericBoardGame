@@ -1,6 +1,6 @@
 # Ignore dirs
 /test
-/RSAG_BoardGame
+/nbproject
 
 # Ignore .zips
 *.zip
